@@ -11,7 +11,7 @@ class Color {
 
   Color(this.red, this.green, this.blue);
 
-  // named constructor
+  // Named constructor that forwards to the default one
   Color.black() : this(0, 0, 0);
   Color.white() : this(255, 255, 255);
   /* 

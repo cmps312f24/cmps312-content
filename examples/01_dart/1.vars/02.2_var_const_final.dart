@@ -28,9 +28,12 @@ known at compile-time and cannot be changed.
   print(todayDate);
 
   // Dart infers 'studentIds' as a List<int>
+  const letterGrades = ['A', 'B+', 'B' 'C', 'D', 'F'];
+
   final ids = [1, 2, 3, 4, 5];
   // This is allowed as we are not changing the reference of 'ids'
   ids.add(6);
+  ids[0] = 10;
   print(ids); // Output: [1, 2, 3, 4, 5, 6]
   // This will cause an error since 'final' is immutable
   //ids = [7, 8, 9];

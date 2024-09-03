@@ -19,4 +19,13 @@ void main() {
   print(aListOfStrings);
   print(aSetOfStrings);
   print(aMapOfStringsToInts);
+
+  //  List generation: creating a list of integers from 1 to 10
+  var range = List.generate(10, (index) => index + 1);
+
+  // Iterating over the range
+  for (var i in range) {
+    print(i);
+  }
+
 }

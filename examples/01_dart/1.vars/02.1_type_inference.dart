@@ -1,4 +1,26 @@
 void main() {
+
+  var d;
+  d.
+  //d = 30;
+  print(d);
+
+
+int z = 20;
+print(z.runtimeType); // Output: int
+
+  String? officeNo;
+  officeNo = null;  
+
+  var len = officeNo?.length ?? 0;
+  print(len);
+  print('len is $len');
+
+  print(officeNo?.toUpperCase());
+
+  int x = 10; // Explicitly declared as int
+  var y = 20; // Inferred as int
+
   var name = 'Ali'; // Inferred as String
   var age = 18; // Inferred as int
   var height = 1.8; // Inferred as double
