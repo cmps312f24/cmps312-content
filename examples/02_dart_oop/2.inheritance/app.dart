@@ -1,10 +1,11 @@
-import 'Person.dart';
+import 'QuMember.dart';
 import 'Student.dart';
 import 'Faculty.dart';
 
 void main() {
   try {
-    var person = Person('Ali', 'Faleh', DateTime.parse('1990-01-12'), '1234567');
+    var person =
+        QuMember('Ali', 'Faleh', DateTime.parse('1990-01-12'), '1234567');
     print(person);
   } catch (e) {
     print(e);
@@ -16,15 +17,17 @@ void main() {
   print('> isUnderAge: ${student1.isUnderAge()}');
   print('> student1.toString(): $student1');
 
-  print('Studies at ${Student.university} in ${Student.city} ${Student.country}. '
+  print(
+      'Studies at ${Student.university} in ${Student.city} ${Student.country}. '
       'Current year: ${Student.getCurrentYear()} ');
 
-  var faculty1 = Faculty('Abbes', 'Ibn Firnas', DateTime.parse('1980-03-20'), 'C07-130');
+  var faculty1 =
+      Faculty('Abbes', 'Ibn Firnas', DateTime.parse('1980-03-20'), 'C07-130');
   print('\n> faculty1.toString(): $faculty1');
 
   var quMembers = [student1, faculty1];
   for (var member in quMembers) {
-    print(member);
+    print(member.toString());
 
     if (member is Student) {
       print(member.gpa);

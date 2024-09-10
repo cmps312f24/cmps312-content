@@ -1,4 +1,4 @@
-import 'Person.dart';
+import 'QuMember.dart';
 
 class Address {
   final String street;
@@ -7,7 +7,7 @@ class Address {
   Address({this.street = '', this.city = ''});
 }
 
-class Student extends Person {
+class Student extends QuMember {
   final double gpa;
   Address address = Address();
 

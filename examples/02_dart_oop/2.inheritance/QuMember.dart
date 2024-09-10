@@ -1,17 +1,18 @@
 //import 'package:intl/intl.dart';
 
 extension StringExtensions on String {
-  bool isPhoneNum() => length == 8; //&& allMatches(RegExp(r'\d')).length == length;
+  bool isPhoneNum() =>
+      length == 8; //&& allMatches(RegExp(r'\d')).length == length;
 }
 
-class Person {
+class QuMember {
   String firstName;
   final String lastName;
   final DateTime dob;
   late int id;
   String _mobile = '';
 
-  Person(this.firstName, this.lastName, this.dob, [String? mobile]) {
+  QuMember(this.firstName, this.lastName, this.dob, [String? mobile]) {
     id = (1 + DateTime.now().millisecondsSinceEpoch % 100);
     if (mobile != null) {
       this.mobile = mobile;

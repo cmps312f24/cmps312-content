@@ -1,9 +1,8 @@
-import 'Shape.dart';
 import 'Circle.dart';
 import 'Rectangle.dart';
 
 void main() {
-  List<Shape> shapes = [
+  var shapes = [
     Circle(5),
     Rectangle(4, 6),
     Circle(3),

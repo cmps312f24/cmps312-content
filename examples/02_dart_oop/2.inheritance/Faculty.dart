@@ -1,6 +1,6 @@
-import 'Person.dart';
+import 'QuMember.dart';
 
-class Faculty extends Person {
+class Faculty extends QuMember {
   final String office;
 
   Faculty(String firstName, String lastName, DateTime dob, this.office)
