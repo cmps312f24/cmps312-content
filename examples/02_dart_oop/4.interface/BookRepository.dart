@@ -14,6 +14,14 @@ abstract class BookRepository {
   void addBook(Book book);
 }
 
+/*
+  The program has two types of repositories: one that 
+    interacts with files (FileBookRepository) and one 
+    that interacts with a database (DBBookRepository).
+  Both repositories implement the BookRepository interface 
+    (abstract class in Dart), providing getBook and addBook methods
+*/
+
 // Implementation of BookRepository using a File system (like a FileBookRepository in Kotlin)
 class FileBookRepository implements BookRepository {
   @override
@@ -43,10 +51,11 @@ class DBBookRepository implements BookRepository {
 }
 
 void main() {
-  // Polymorphism: BookRepository can be either FileBookRepository or DBBookRepository
-  BookRepository bookRepository = DBBookRepository(); 
-  
-  // Accessing the getBook method
+  // The code uses polymorphism, where bookRepository is of
+  // type BookRepository but can be assigned either
+  // a DBBookRepository or a FileBookRepository object
+  BookRepository bookRepository = DBBookRepository();
+
   var book = bookRepository.getBook("1234");
   print(book);
 }
