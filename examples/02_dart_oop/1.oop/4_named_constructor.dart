@@ -6,19 +6,20 @@ class Conference {
   */
   final String name;
   final String city;
-  bool isFree = true;
-  double fee = 0.0;
+  final bool isFree;
+  double fee;
 
-  // Primary constructor with optional parameters
+  // Primary constructor
   // Required is used to indicate mandatory parameters
-  // Setting default values (isFree = true and fee = 0.0)
+  // Setting the values (isFree = true and fee = 0.0)
   Conference({
     required this.name,
     required this.city,
-  });
+  })  : isFree = true,
+        fee = 0.0;
 
   // Named constructor for non-free conferences
-  // Dart does not support secondary constructors, a named 
+  // Dart does not support secondary constructors, a named
   // constructor Conference.withFee is used instead
   Conference.withFee({
     required this.name,
@@ -27,15 +28,13 @@ class Conference {
   }) : isFree = false;
 
   @override
-  String toString() {
-    return 'Conference: $name, City: $city, Fee: $fee, Is Free: $isFree';
-  }
-
+  String toString() =>
+      'Conference: $name, City: $city, Fee: $fee, Is Free: $isFree';
 }
 
 void main() {
   // Using the named constructor for a conference with a fee
-  var conference = Conference.withFee(name: "Flutter Conference", city: "Doha", fee: 300);
-  print('Conference: ${conference.name}, City: ${conference.city}, Fee: ${conference.fee}, Is Free: ${conference.isFree}');
+  var conference =
+      Conference.withFee(name: "Flutter Conference", city: "Doha", fee: 300);
   print(conference);
 }

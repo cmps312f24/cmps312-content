@@ -51,30 +51,25 @@ class Duck extends Animal with CanFly, CanSwim {
 }
 
 void main() {
-  // Bird example
-  var bird = Bird();
-  bird.setFlyingSpeed(20); // Set flying speed for the bird
-  print("Bird:");
-  bird.breathe();
-  bird.fly();
-  bird.chirp();
-  print(""); // Line break
+  print('Bird example');
+  var bird = Bird()
+    ..setFlyingSpeed(20)
+    ..breathe()
+    ..fly()
+    ..chirp();
 
-  // Fish example
-  var fish = Fish();
-  fish.setSwimmingSpeed(8); // Set swimming speed for the fish
-  print("Fish:");
-  fish.breathe();
-  fish.swim();
-  fish.display();
-  print(""); // Line break
+  print('\nFish example');
+  var fish = Fish()
+    ..setSwimmingSpeed(8)
+    ..breathe()
+    ..swim()
+    ..display();
 
-  // Duck example
-  var duck = Duck();
-  duck.setSpeeds(15, 10); // Set both flying and swimming speeds for the duck
-  print("Duck:");
-  duck.breathe();
-  duck.fly();
-  duck.swim();
-  duck.quack();
+  print('\nDuck example');
+  var duck = Duck()
+    ..setSpeeds(15, 10)
+    ..breathe()
+    ..fly()
+    ..swim()
+    ..quack();
 }

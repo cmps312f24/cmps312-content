@@ -12,6 +12,6 @@
 void main() {
   // Extracting values from the record
   // we unpack both positional and named fields
-  var (name, age, city :city, :country) = getPersonDetails();
-  print("Name: $name, Age: $age, City: $city, Country: $country");
+  var (name, age, city : suburb, :country) = getPersonDetails();
+  print("Name: $name, Age: $age, Suburb: $suburb, Country: $country");
 }

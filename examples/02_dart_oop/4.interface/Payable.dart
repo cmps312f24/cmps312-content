@@ -3,6 +3,3 @@ abstract class Payable {
   double get amount;
   String pay();
 }
-
-
-
