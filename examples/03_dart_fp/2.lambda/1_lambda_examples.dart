@@ -12,6 +12,12 @@ void main() {
   hasEvenNumber = nums.any((n) => n % 2 == 0);
   print("Has even number: $hasEvenNumber");
 
+  var allEvens = nums.every((n) => n % 2 == 0);
+  print('All numbers are even: $allEvens');
+
+  var firstEven = nums.firstWhere((n) => n % 2 == 0);
+  print('First even number: $firstEven');
+
   // Version 1
   List<int> evens = nums.where(isEven).toList();
 

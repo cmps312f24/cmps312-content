@@ -1,13 +1,13 @@
 Iterable<(String, int)> charCountImperative(List<String> strings) {
   final List<(String, int)> charCounts = [];
-  for (int i = 0; i < strings.length; ++i) {
-    charCounts.add((strings[i], strings[i].length));
+  for (var s in strings) {
+    charCounts.add((s, s.length));
   }
   return charCounts;
 }
 
 Iterable<(String, int)> charCountFunctional(List<String> strings) {
-  return strings.map((string) => (string, string.length));
+  return strings.map((s) => (s, s.length));
 }
 
 void main() {
