@@ -13,3 +13,8 @@ String asciiCharType(int char) {
     // _ denotes Default case
   };
 }
+
+void main() {
+  const char = 60;
+  print(asciiCharType(char)); // punctuation
+}

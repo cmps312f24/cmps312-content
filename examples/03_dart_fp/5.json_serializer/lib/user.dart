@@ -1,6 +1,8 @@
 /*
 Install dependencies:
-flutter pub add json_annotation dev:build_runner dev:json_serializable
+dart pub add dev:build_runner dev:json_serializable dev:json_annotation
+
+Run the build_runner to generate the .g.dart files:
 dart run build_runner build --delete-conflicting-outputs
 */
 import 'package:json_annotation/json_annotation.dart';

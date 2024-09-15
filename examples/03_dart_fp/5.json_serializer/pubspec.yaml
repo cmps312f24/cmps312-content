@@ -1,0 +1,17 @@
+name: json_serializer_demo
+description: A demo app for using json_serializable.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.4.3
+
+# Add regular dependencies here.
+dependencies:
+  
+
+dev_dependencies:
+  build_runner: ^2.4.9
+  json_annotation: ^4.9.0
+  json_serializable: ^6.8.0
+  lints: ^3.0.0
