@@ -22,10 +22,10 @@ import 'dart:convert';
       // If validation passes, return the data as a record with named fields
       return (name: name, age: age, role: role);
     } else {
-      throw Exception('Invalid data types in user JSON');
+      throw FormatException('Invalid data types in user JSON');
     }
   } else {
-    throw Exception('Missing required fields in user JSON');
+    throw FormatException('Missing required fields in user JSON');
   }
 }
 
@@ -54,7 +54,7 @@ import 'dart:convert';
       }) {
     return (name: name, age: age, role: role);
   } else {
-    throw Exception('Invalid JSON format');
+    throw FormatException('Unexpected JSON format');
   }
 }
 
@@ -79,20 +79,13 @@ void main() {
   // Decoding the JSON string to a Map
   Map<String, dynamic> userJson = jsonDecode(validJsonString);
 
-
   // Destructuring the map using pattern matching (no validation)
   /*
   - The pattern var {'user': {'name': name, 'age': age, 'role': role}} 
     allows us to extract all fields from the user object in one step and
     store them in the name, age, and role variables.
   */
-  var {
-    'user': {
-      'name': name,
-      'age': age,
-      'role': role
-    }
-  } = userJson;
+  var {'user': {'name': name, 'age': age, 'role': role}} = userJson;
 
   print('$name is $age years old and has the role of $role.');
 
