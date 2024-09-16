@@ -1,5 +1,14 @@
+/*
+Type patterns allow you to check the type of a variable 
+and deconstruct it in a single operation.
+- Allows for easier type-specific handling without writing 
+  complex if-else chains
+- E.g., differentiate between different user roles and handle 
+  them appropriately
+*/
 // Define user types
-// Sealed class means that the class can only be extended within the same project
+// Sealed class means that the class can only be extended 
+// within the same project
 sealed class User {}
 
 class Admin extends User {
@@ -31,8 +40,8 @@ String getUserScreenIfElse(User user) {
 }
 
 String getUserScreen(User user) {
-  // Using switch-case to determine the screen based on user type
-  // Type Matching
+  // Type Matching: using A switch expression to determine 
+  // the screen based on the user type
   return switch (user) {
     Admin admin => AdminDashboard(admin),
     VerifiedUser verifiedUser => UserHome(verifiedUser),
