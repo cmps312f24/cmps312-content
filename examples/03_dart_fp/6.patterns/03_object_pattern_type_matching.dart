@@ -1,14 +1,12 @@
 /*
-Use object pattern to simultaneously check the variable type 
-and deconstruct it in a single operation.
-- Allows for easier type-specific handling without writing complex 
-  if-else chains + at the same time exact values for the object
-- E.g., differentiate between different user roles and handle 
-  them appropriately
+Use object pattern to check the variable type and allow easier 
+type-specific handling without writing complex if-else chains 
+E.g., differentiate between different user roles and 
+handle them appropriately
 */
 // Define user types
 // Sealed class means that the class can only be extended 
-// within the same project
+// within the same library
 sealed class User {}
 
 class Admin extends User {
@@ -40,7 +38,7 @@ String getUserScreenIfElse(User user) {
 }
 
 String getUserScreen(User user) {
-  // Type Matching: using A switch expression to determine 
+  // Type Matching: using a switch expression to determine 
   // the screen based on the user type
   return switch (user) {
     Admin admin => AdminDashboard(admin),

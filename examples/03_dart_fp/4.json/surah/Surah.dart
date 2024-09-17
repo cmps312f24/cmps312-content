@@ -27,10 +27,10 @@ class Surah {
       };
 
   // Convert a JSON map to a Surah object
-  Surah.fromJson(Map<String, dynamic> json)
-      : id = json['id'],
-        name = json['name'],
-        englishName = json['englishName'],
-        ayaCount = json['ayaCount'],
-        type = json['type'];
+  Surah.fromJson(Map<String, dynamic> json):
+    id = json['id'] as int,
+    name = json['name'] as String,
+    englishName = json['englishName'] as String,
+    ayaCount = json['ayaCount'] as int,
+    type = json['type'] as String;
 }
