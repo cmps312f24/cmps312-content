@@ -15,7 +15,8 @@ void main() {
   // Extract the latitude and longitude from the record
   // The values are unpacked using var (latitude, longitude) 
   // for easy access to data returned from the function.
-  var (latitude, longitude) = getCoordinates();
+  var (latitude, longitude) = (25.276987, 51.520008);
+  (latitude, longitude) = getCoordinates();
   print("Latitude: $latitude");
   print("Longitude: $longitude");
 }

@@ -7,14 +7,19 @@ String ageCategory(int age) {
   };
 }
 
-String letterGrade(double score) {
-  return switch (score) {
-    >= 90 => 'Grade: A',
-    >= 80 => 'Grade: B',
-    >= 70 => 'Grade: C',
-    >= 60 => 'Grade: D',
-    < 60 => 'Grade: F',
-    _ => 'Invalid score'
+String getLetterGrade(double grade) {
+  // Use a switch expression with relational patterns to map 
+  // the grade to a letter grade
+  return switch (grade) {
+    >= 90       => 'A',
+    >= 85 && < 90 => 'B+',
+    >= 80 && < 85 => 'B',
+    >= 75 && < 80 => 'C+',
+    >= 70 && < 75 => 'C',
+    >= 65 && < 70 => 'D+',
+    >= 60 && < 65 => 'D',
+    < 60        => 'F',
+    _           => 'Invalid grade'
   };
 }
 
@@ -45,9 +50,10 @@ void main() {
   print(ageCategory(15)); // Outputs: Teenager
   print(ageCategory(25)); // Outputs: Adult
 
-  print(letterGrade(95)); // Outputs: Grade: A
-  print(letterGrade(82)); // Outputs: Grade: B
-  print(letterGrade(73)); // Outputs: Grade: C
+  print(getLetterGrade(92));  // Output: A
+  print(getLetterGrade(87));  // Output: B+
+  print(getLetterGrade(72));  // Output: C
+  print(getLetterGrade(58));  // Output: F
 
   print("\n");
   print(formatDate(
