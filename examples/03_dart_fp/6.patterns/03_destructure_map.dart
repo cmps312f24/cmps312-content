@@ -10,5 +10,5 @@ void main(List<String> args) {
   // Here id, name and email are new variable declarations 
   // which holds respective values of [user] data
   final {'userId':id, 'fullName':name, 'email':email} = user;
-  print("id: $id, name: $name, email: $email");
+  print("id = $id, name = $name, email = $email");
 }
