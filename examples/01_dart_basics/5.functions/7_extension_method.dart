@@ -4,11 +4,11 @@ extension StringExtensions on String {
     return int.parse(this);
   }
 
-  // You can omit the 'this' keyword
-  String lastChar2() {
+   String lastChar2() {
     return this.substring(this.length - 1);
   }
 
+  // You can omit the 'this' keyword
   String lastChar() {
     return substring(length - 1);
   }

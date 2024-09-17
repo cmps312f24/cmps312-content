@@ -1,8 +1,8 @@
 /*
-Type patterns allow you to check the type of a variable 
+Use object pattern to simultaneously check the variable type 
 and deconstruct it in a single operation.
-- Allows for easier type-specific handling without writing 
-  complex if-else chains
+- Allows for easier type-specific handling without writing complex 
+  if-else chains + at the same time exact values for the object
 - E.g., differentiate between different user roles and handle 
   them appropriately
 */
