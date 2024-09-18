@@ -12,11 +12,12 @@ String pointToString(({double latitude, double longitude}) point) {
 
 void main() {
   // A record with latitude and longitude named fields
-  ({double latitude, double longitude}) point =
-      (latitude: 10.553, longitude: 21.562);
+  var point = (latitude: 10.553, longitude: 21.562);
 
   // Deconstructing the record to extract latitude and longitude
-  // and assigning them to lat and long variables respectively
+  var (:latitude, :longitude) = point;
+  print('lat: $latitude, long: $longitude');
+  // or also assign them to lat and long variables respectively
   var (latitude: lat, longitude: long) = point;
   print('lat: $lat, long: $long');
 
