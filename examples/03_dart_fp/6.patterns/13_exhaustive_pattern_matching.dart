@@ -29,10 +29,14 @@ class BankTransfer extends PaymentMethod {
     (cardNumber, email, or bankAccount) and process the payment accordingly.
 */
 String processPayment(PaymentMethod paymentMethod) {
-  return switch(paymentMethod) {
-    CreditCard(:var cardNumber) => 'Processing credit card payment with card number: $cardNumber',
+  // If you comment any of the below lines,
+  // you will get a compile-time error
+  return switch (paymentMethod) {
+    CreditCard(:var cardNumber) =>
+      'Processing credit card payment with card number: $cardNumber',
     PayPal(:var email) => 'Processing PayPal payment with email: $email',
-    BankTransfer(:var bankAccount) => 'Processing bank transfer to account: $bankAccount',
+    BankTransfer(:var bankAccount) =>
+      'Processing bank transfer to account: $bankAccount',
   };
 }
 
