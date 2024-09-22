@@ -1,6 +1,6 @@
+import 'Faculty.dart';
 import 'QuMember.dart';
 import 'Student.dart';
-import 'Faculty.dart';
 
 void main() {
   try {
