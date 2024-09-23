@@ -15,7 +15,7 @@ class _SwitchScreenState extends State<SwitchScreen> {
       theme: isDarkMode ? ThemeData.dark() : ThemeData.light(),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Switch Demo'),
+          title: const Text('Switch Demo'),
           centerTitle: true,
         ),
         body: Row(

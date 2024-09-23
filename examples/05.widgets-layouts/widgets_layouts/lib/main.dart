@@ -3,6 +3,7 @@ import 'package:widgets_layouts/layout_demos/artist_card_screen.dart';
 import 'package:widgets_layouts/layout_demos/responsive_screen.dart';
 import 'package:widgets_layouts/screens/click_counter.dart';
 import 'package:widgets_layouts/screens/counter_screen.dart';
+import 'package:widgets_layouts/screens/lift_state_up.dart';
 import 'package:widgets_layouts/screens/tip_calculator.dart';
 import 'package:widgets_layouts/widget_demos/radio_button_screen.dart';
 import 'package:widgets_layouts/widget_demos/button_screen.dart';
@@ -28,18 +29,20 @@ class MainApp extends StatelessWidget {
       ),
       home: //const Greeting(name: 'World'),
           //const GreetingApp(),
-          const ClickCounter(),
-      //const CounterScreen(),
-      //const ButtonScreen(),
-      //const TextFieldScreen(),
-      //CheckBoxScreen(),
-      //const DropdownMenuScreen(),
-      //const RadioButtonScreen(),
-      //const SliderScreen(),
-      //const SwitchScreen(),
-      //const ArtistCardScreen(),
-      //const ResponsiveScreen(),
-      //const TipCalculator(),
+          //const ClickCounter(),
+          //const CounterScreen(),
+          //const ButtonScreen(),
+          //const TextFieldScreen(),
+          //CheckBoxScreen(),
+          //const DropdownMenuScreen(),
+          //const RadioButtonScreen(),
+          //const SliderScreen(),
+          //const SwitchScreen(),
+          //const ArtistCardScreen(),
+          //const ResponsiveScreen(),
+          //const TipCalculator(),
+          // State hoisting example
+          const HelloScreen(),
     );
   }
 }

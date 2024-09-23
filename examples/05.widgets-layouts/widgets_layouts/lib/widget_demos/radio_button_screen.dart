@@ -50,7 +50,7 @@ class _RadioButtonScreenState extends State<RadioButtonScreen> {
                   selectedIdeIndex = index;
                 });
               },
-              cardBackgroundColor: Color(0xFFF8F8FF),
+              cardBackgroundColor: const Color(0xFFF8F8FF),
             ),
             const SizedBox(height: 15.0),
             Center(
