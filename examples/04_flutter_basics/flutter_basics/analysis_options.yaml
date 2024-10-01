@@ -3,3 +3,4 @@ analyzer:
   errors:
     use_key_in_widget_constructors: ignore
     library_private_types_in_public_api: ignore
+    avoid_print: ignore

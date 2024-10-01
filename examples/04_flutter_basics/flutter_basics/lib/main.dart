@@ -1,35 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basics/basics/click_counter.dart';
-import 'package:flutter_basics/basics/greeting.dart';
-import 'package:flutter_basics/basics/hello_world.dart';
-import 'package:flutter_basics/state/welcome_screen.dart';
+import 'package:flutter_basics/widgets/click_counter.dart';
+import 'package:flutter_basics/widgets/flutter_logo.dart';
+import 'package:flutter_basics/widgets/greeting.dart';
+import 'package:flutter_basics/widgets/hello_world.dart';
+import 'package:flutter_basics/screens/welcome_screen.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Basics'),
-        ),
-        //bottomNavigationBar: const WelcomeScreen(),
-        body: const Center(
-          child: Greeting(name: 'Flutter'),
-        ),
-      ),
-    ),
-  );
-/*   //runApp(const MainApp());
-  runApp(MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        title: const Text('Flutter Basics'),
-      ),
-      //bottomNavigationBar: ,
-      body: Center(
-        child: Greeting(name: 'Flutter'),
-      ),
-    ),
-  )); */
+  runApp(const MainApp());
+  //runApp(const WelcomeScreen());
+  //runApp(const FlutterLogoScreen());
 }
 
 class MainApp extends StatelessWidget {
@@ -40,17 +19,17 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          //child: WelcomeScreen(),
-          child: Column(
+          child: WelcomeScreen(),
+          //child: ClicksCounter(),
+          /* child: Column(
             children: [
               Greeting(name: 'Flutter'),
+              SizedBox(height: 16),
               HelloWorld(name: 'CMPS 312 Team'),
-              ClicksCounter(),
-              //WelcomeScreen(),
+              SizedBox(height: 16),
+              ClicksCounter()
             ],
-          ),
-          //WelcomeScreen(),
-          //Text('Hello World!'),
+          ), */
         ),
       ),
     );
