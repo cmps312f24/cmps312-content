@@ -1,0 +1,42 @@
+[
+  {
+    "chequeNo": 1234,
+    "amount": 500.0,
+    "drawer": "Ali Faleh",
+    "bankName": "Commercial Bank",
+    "status": "Deposited",
+    "receivedDate": "2024-10-01",
+    "dueDate": "2024-10-03",
+    "chequeImageUri": "cheque1.jpg"
+  },
+  {
+    "chequeNo": 4567,
+    "amount": 500.0,
+    "drawer": "Sara Dahak",
+    "bankName": "Qatar National Bank",
+    "status": "Deposited",
+    "receivedDate": "2024-10-01",
+    "dueDate": "2024-10-03",
+    "chequeImageUri": "cheque2.jpg"
+  },
+  {
+    "chequeNo": 4568,
+    "amount": 500.0,
+    "drawer": "Sara Dahak",
+    "bankName": "Qatar National Bank",
+    "status": "Awaiting",
+    "receivedDate": "2024-10-03",
+    "dueDate": "2024-10-15",
+    "chequeImageUri": "cheque2.jpg"
+  },
+  {
+    "chequeNo": 5678,
+    "amount": 1000.0,
+    "drawer": "Abbas Ibn Firnas",
+    "bankName": "Qatar Islamic Bank",
+    "status": "Awaiting",
+    "receivedDate": "2024-10-02",
+    "dueDate": "2024-10-16",
+    "chequeImageUri": "cheque3.jpg"
+  }
+]
