@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:state_management/repositories/product_repository.dart';
 
-// List of categories (using Provider)
-final categoriesProvider = Provider<List<String>>((ref) {
-  return ['Electronics', 'Clothing', 'Books'];
+final categoriesProvider = FutureProvider<List<String>>((ref) async {
+  return await ProductRepository.getCategories();
 });

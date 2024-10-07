@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_management/providers/categories_provider.dart';
 import 'package:state_management/providers/products_provider.dart';
 import 'package:state_management/providers/selected_category_provider.dart';
+import 'package:state_management/widgets/product_tile.dart';
 
 class ProductsScreen extends ConsumerWidget {
   const ProductsScreen();
@@ -17,20 +18,29 @@ class ProductsScreen extends ConsumerWidget {
       body: Column(
         children: [
           // Dropdown for category filter
-          DropdownButton<String?>(
-            value: selectedCategory,
-            hint: const Text('Select Category'),
-            items: [
-              const DropdownMenuItem(value: null, child: Text('All')),
-              ...categories.map((category) => DropdownMenuItem(
-                    value: category,
-                    child: Text(category),
-                  ))
-            ],
-            onChanged: (value) {
-              ref.read(selectedCategoryProvider.notifier).setCategory(value);
+          categories.when(
+            data: (categories) {
+              return DropdownMenu<String?>(
+                initialSelection: selectedCategory,
+                hintText: 'Select Category',
+                dropdownMenuEntries: [
+                  const DropdownMenuEntry(value: null, label: 'All'),
+                  ...categories.map((category) => DropdownMenuEntry(
+                        value: category,
+                        label: category,
+                      ))
+                ],
+                onSelected: (value) {
+                  ref
+                      .read(selectedCategoryProvider.notifier)
+                      .setCategory(value);
+                },
+              );
             },
+            loading: () => const Center(child: CircularProgressIndicator()),
+            error: (err, stack) => Center(child: Text('Error: $err')),
           ),
+
           // Product list
           Expanded(
             child: products.when(
@@ -43,9 +53,11 @@ class ProductsScreen extends ConsumerWidget {
                 return ListView.builder(
                   itemCount: filteredProducts.length,
                   itemBuilder: (context, index) {
-                    return ListTile(
-                      title: Text(filteredProducts[index].name),
-                      subtitle: Text(filteredProducts[index].category),
+                    return ProductTile(
+                      product: filteredProducts[index],
+                      onTap: () {
+                        // ToDo: Navigate to product detail screen
+                      },
                     );
                   },
                 );

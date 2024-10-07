@@ -1,0 +1,632 @@
+[
+  {
+    "id": 101,
+    "name": "Smartphone X",
+    "category": "Electronics",
+    "price": 799.99,
+    "description": "A high-end smartphone with a powerful processor and advanced features."
+  },
+  {
+    "id": 102,
+    "name": "Laptop Pro",
+    "category": "Electronics",
+    "price": 1299.99,
+    "description": "A powerful laptop with a sleek design and long battery life."
+  },
+  {
+    "id": 103,
+    "name": "Wireless Earbuds",
+    "category": "Electronics",
+    "price": 199.99,
+    "description": "Compact and powerful earbuds with noise cancellation."
+  },
+  {
+    "id": 104,
+    "name": "4K Camera",
+    "category": "Electronics",
+    "price": 599.99,
+    "description": "A professional-grade camera with stunning 4K video recording."
+  },
+  {
+    "id": 105,
+    "name": "Smartwatch Y",
+    "category": "Electronics",
+    "price": 299.99,
+    "description": "A smartwatch with fitness tracking and advanced notifications."
+  },
+  {
+    "id": 106,
+    "name": "Bluetooth Speaker",
+    "category": "Electronics",
+    "price": 99.99,
+    "description": "Portable Bluetooth speaker with deep bass and long battery life."
+  },
+  {
+    "id": 107,
+    "name": "Gaming Console Z",
+    "category": "Electronics",
+    "price": 499.99,
+    "description": "A next-gen gaming console with realistic graphics and fast loading times."
+  },
+  {
+    "id": 108,
+    "name": "Tablet 10",
+    "category": "Electronics",
+    "price": 399.99,
+    "description": "A lightweight tablet with a vibrant 10-inch display."
+  },
+  {
+    "id": 109,
+    "name": "Wireless Charger",
+    "category": "Electronics",
+    "price": 39.99,
+    "description": "A fast wireless charger for smartphones and other devices."
+  },
+  {
+    "id": 110,
+    "name": "Digital Camera Lens",
+    "category": "Electronics",
+    "price": 499.99,
+    "description": "High-quality lens for digital cameras with adjustable zoom."
+  },
+  {
+    "id": 111,
+    "name": "Action Camera",
+    "category": "Electronics",
+    "price": 299.99,
+    "description": "A rugged camera for capturing action-packed moments."
+  },
+  {
+    "id": 112,
+    "name": "E-reader",
+    "category": "Electronics",
+    "price": 129.99,
+    "description": "A lightweight e-reader with a paper-like display."
+  },
+  {
+    "id": 113,
+    "name": "VR Headset",
+    "category": "Electronics",
+    "price": 349.99,
+    "description": "Immersive virtual reality headset with wide field of view."
+  },
+  {
+    "id": 114,
+    "name": "Drone 4K",
+    "category": "Electronics",
+    "price": 899.99,
+    "description": "A drone with 4K camera and GPS-based flight control."
+  },
+  {
+    "id": 115,
+    "name": "External Hard Drive",
+    "category": "Electronics",
+    "price": 79.99,
+    "description": "Portable external hard drive with 2TB of storage."
+  },
+  {
+    "id": 201,
+    "name": "T-shirt",
+    "category": "Clothing",
+    "price": 19.99,
+    "description": "A soft cotton t-shirt available in multiple colors."
+  },
+  {
+    "id": 202,
+    "name": "Jeans",
+    "category": "Clothing",
+    "price": 49.99,
+    "description": "Comfortable and durable jeans with a classic fit."
+  },
+  {
+    "id": 203,
+    "name": "Jacket",
+    "category": "Clothing",
+    "price": 99.99,
+    "description": "Stylish jacket for cool weather, made of high-quality materials."
+  },
+  {
+    "id": 204,
+    "name": "Dress",
+    "category": "Clothing",
+    "price": 59.99,
+    "description": "A casual dress that is perfect for both work and weekends."
+  },
+  {
+    "id": 205,
+    "name": "Sweater",
+    "category": "Clothing",
+    "price": 39.99,
+    "description": "A cozy sweater made of soft wool."
+  },
+  {
+    "id": 206,
+    "name": "Skirt",
+    "category": "Clothing",
+    "price": 29.99,
+    "description": "A knee-length skirt that comes in multiple colors."
+  },
+  {
+    "id": 207,
+    "name": "Blazer",
+    "category": "Clothing",
+    "price": 79.99,
+    "description": "A tailored blazer for formal and semi-formal occasions."
+  },
+  {
+    "id": 208,
+    "name": "Sneakers",
+    "category": "Clothing",
+    "price": 69.99,
+    "description": "Comfortable sneakers for daily wear and sports activities."
+  },
+  {
+    "id": 209,
+    "name": "Scarf",
+    "category": "Clothing",
+    "price": 14.99,
+    "description": "A warm scarf made of wool and available in various designs."
+  },
+  {
+    "id": 210,
+    "name": "Hat",
+    "category": "Clothing",
+    "price": 19.99,
+    "description": "A stylish hat for both sun protection and fashion."
+  },
+  {
+    "id": 211,
+    "name": "Gloves",
+    "category": "Clothing",
+    "price": 24.99,
+    "description": "Warm gloves with touch-screen capability."
+  },
+  {
+    "id": 212,
+    "name": "Belt",
+    "category": "Clothing",
+    "price": 29.99,
+    "description": "A leather belt with an adjustable buckle."
+  },
+  {
+    "id": 213,
+    "name": "Socks (5-Pack)",
+    "category": "Clothing",
+    "price": 14.99,
+    "description": "A pack of five cotton socks in assorted colors."
+  },
+  {
+    "id": 214,
+    "name": "Polo Shirt",
+    "category": "Clothing",
+    "price": 29.99,
+    "description": "A classic polo shirt available in various sizes."
+  },
+  {
+    "id": 215,
+    "name": "Formal Shoes",
+    "category": "Clothing",
+    "price": 89.99,
+    "description": "Elegant formal shoes for business and special occasions."
+  },
+  {
+    "id": 301,
+    "name": "Refrigerator",
+    "category": "Home Appliances",
+    "price": 799.99,
+    "description": "Energy-efficient refrigerator with a large capacity."
+  },
+  {
+    "id": 302,
+    "name": "Washing Machine",
+    "category": "Home Appliances",
+    "price": 499.99,
+    "description": "A front-loading washing machine with multiple wash settings."
+  },
+  {
+    "id": 303,
+    "name": "Microwave Oven",
+    "category": "Home Appliances",
+    "price": 99.99,
+    "description": "A compact microwave with pre-programmed cooking modes."
+  },
+  {
+    "id": 304,
+    "name": "Dishwasher",
+    "category": "Home Appliances",
+    "price": 699.99,
+    "description": "A quiet and efficient dishwasher with multiple wash cycles."
+  },
+  {
+    "id": 305,
+    "name": "Vacuum Cleaner",
+    "category": "Home Appliances",
+    "price": 149.99,
+    "description": "A lightweight vacuum cleaner with powerful suction."
+  },
+  {
+    "id": 306,
+    "name": "Air Conditioner",
+    "category": "Home Appliances",
+    "price": 399.99,
+    "description": "Energy-efficient air conditioner with remote control."
+  },
+  {
+    "id": 307,
+    "name": "Coffee Maker",
+    "category": "Home Appliances",
+    "price": 79.99,
+    "description": "A programmable coffee maker with multiple brew sizes."
+  },
+  {
+    "id": 308,
+    "name": "Blender",
+    "category": "Home Appliances",
+    "price": 49.99,
+    "description": "A high-speed blender for smoothies, sauces, and more."
+  },
+  {
+    "id": 309,
+    "name": "Electric Kettle",
+    "category": "Home Appliances",
+    "price": 29.99,
+    "description": "A fast-boiling electric kettle with automatic shut-off."
+  },
+  {
+    "id": 310,
+    "name": "Toaster",
+    "category": "Home Appliances",
+    "price": 24.99,
+    "description": "A two-slice toaster with browning control."
+  },
+  {
+    "id": 311,
+    "name": "Slow Cooker",
+    "category": "Home Appliances",
+    "price": 59.99,
+    "description": "A programmable slow cooker for convenient meal preparation."
+  },
+  {
+    "id": 312,
+    "name": "Air Fryer",
+    "category": "Home Appliances",
+    "price": 99.99,
+    "description": "An air fryer that cooks food with little to no oil."
+  },
+  {
+    "id": 313,
+    "name": "Rice Cooker",
+    "category": "Home Appliances",
+    "price": 49.99,
+    "description": "A rice cooker with one-touch operation for perfect rice every time."
+  },
+  {
+    "id": 314,
+    "name": "Steam Iron",
+    "category": "Home Appliances",
+    "price": 39.99,
+    "description": "A powerful steam iron for wrinkle-free clothes."
+  },
+  {
+    "id": 315,
+    "name": "Dehumidifier",
+    "category": "Home Appliances",
+    "price": 199.99,
+    "description": "A portable dehumidifier to reduce moisture in the air."
+  },
+  {
+    "id": 401,
+    "name": "Mystery Novel",
+    "category": "Books",
+    "price": 14.99,
+    "description": "A gripping mystery novel that keeps you on the edge of your seat."
+  },
+  {
+    "id": 402,
+    "name": "Science Fiction Book",
+    "category": "Books",
+    "price": 19.99,
+    "description": "A thrilling science fiction story set in a futuristic world."
+  },
+  {
+    "id": 403,
+    "name": "Self-Help Guide",
+    "category": "Books",
+    "price": 12.99,
+    "description": "A guide to personal development and achieving success."
+  },
+  {
+    "id": 404,
+    "name": "Cookbook",
+    "category": "Books",
+    "price": 24.99,
+    "description": "A comprehensive cookbook with recipes for all occasions."
+  },
+  {
+    "id": 405,
+    "name": "Historical Biography",
+    "category": "Books",
+    "price": 18.99,
+    "description": "A detailed biography of a prominent historical figure."
+  },
+  {
+    "id": 406,
+    "name": "Fantasy Novel",
+    "category": "Books",
+    "price": 15.99,
+    "description": "An epic fantasy adventure in a magical world."
+  },
+  {
+    "id": 407,
+    "name": "Textbook: Data Structures",
+    "category": "Books",
+    "price": 59.99,
+    "description": "A textbook on data structures for computer science students."
+  },
+  {
+    "id": 408,
+    "name": "Travel Guide",
+    "category": "Books",
+    "price": 21.99,
+    "description": "A guidebook for popular travel destinations around the world."
+  },
+  {
+    "id": 409,
+    "name": "Children's Picture Book",
+    "category": "Books",
+    "price": 9.99,
+    "description": "A colorful picture book for young readers."
+  },
+  {
+    "id": 410,
+    "name": "Poetry Collection",
+    "category": "Books",
+    "price": 14.99,
+    "description": "A collection of poems from various contemporary poets."
+  },
+  {
+    "id": 411,
+    "name": "Graphic Novel",
+    "category": "Books",
+    "price": 19.99,
+    "description": "A visually stunning graphic novel with an engaging story."
+  },
+  {
+    "id": 412,
+    "name": "Philosophy Book",
+    "category": "Books",
+    "price": 16.99,
+    "description": "An introduction to key philosophical concepts and thinkers."
+  },
+  {
+    "id": 413,
+    "name": "Classic Literature",
+    "category": "Books",
+    "price": 9.99,
+    "description": "A timeless classic novel that has stood the test of time."
+  },
+  {
+    "id": 414,
+    "name": "Art History Book",
+    "category": "Books",
+    "price": 39.99,
+    "description": "A detailed look at the history of art from ancient to modern times."
+  },
+  {
+    "id": 415,
+    "name": "Business Strategy Book",
+    "category": "Books",
+    "price": 29.99,
+    "description": "A guide to effective business strategies and leadership."
+  },
+  {
+    "id": 501,
+    "name": "Basketball",
+    "category": "Sports Equipment",
+    "price": 29.99,
+    "description": "A high-quality basketball for indoor and outdoor play."
+  },
+  {
+    "id": 502,
+    "name": "Tennis Racket",
+    "category": "Sports Equipment",
+    "price": 99.99,
+    "description": "A lightweight and durable tennis racket for all skill levels."
+  },
+  {
+    "id": 503,
+    "name": "Yoga Mat",
+    "category": "Sports Equipment",
+    "price": 24.99,
+    "description": "A non-slip yoga mat for comfort and stability during workouts."
+  },
+  {
+    "id": 504,
+    "name": "Football",
+    "category": "Sports Equipment",
+    "price": 34.99,
+    "description": "A durable football for casual and competitive play."
+  },
+  {
+    "id": 505,
+    "name": "Running Shoes",
+    "category": "Sports Equipment",
+    "price": 79.99,
+    "description": "Lightweight running shoes designed for comfort and performance."
+  },
+  {
+    "id": 506,
+    "name": "Dumbbell Set",
+    "category": "Sports Equipment",
+    "price": 59.99,
+    "description": "A set of adjustable dumbbells for strength training at home."
+  },
+  {
+    "id": 507,
+    "name": "Swimming Goggles",
+    "category": "Sports Equipment",
+    "price": 19.99,
+    "description": "Anti-fog swimming goggles with UV protection."
+  },
+  {
+    "id": 508,
+    "name": "Golf Clubs Set",
+    "category": "Sports Equipment",
+    "price": 499.99,
+    "description": "A complete set of golf clubs for both beginners and advanced players."
+  },
+  {
+    "id": 509,
+    "name": "Boxing Gloves",
+    "category": "Sports Equipment",
+    "price": 49.99,
+    "description": "Protective boxing gloves designed for training and sparring."
+  },
+  {
+    "id": 510,
+    "name": "Treadmill",
+    "category": "Sports Equipment",
+    "price": 799.99,
+    "description": "A high-performance treadmill with multiple workout programs."
+  },
+  {
+    "id": 511,
+    "name": "Volleyball",
+    "category": "Sports Equipment",
+    "price": 24.99,
+    "description": "A lightweight volleyball designed for indoor and beach play."
+  },
+  {
+    "id": 512,
+    "name": "Fitness Tracker",
+    "category": "Sports Equipment",
+    "price": 99.99,
+    "description": "A wearable fitness tracker that monitors heart rate and steps."
+  },
+  {
+    "id": 513,
+    "name": "Resistance Bands",
+    "category": "Sports Equipment",
+    "price": 19.99,
+    "description": "A set of resistance bands for strength training and flexibility."
+  },
+  {
+    "id": 514,
+    "name": "Cycling Helmet",
+    "category": "Sports Equipment",
+    "price": 49.99,
+    "description": "A safety-certified helmet for cycling enthusiasts."
+  },
+  {
+    "id": 515,
+    "name": "Soccer Ball",
+    "category": "Sports Equipment",
+    "price": 29.99,
+    "description": "A durable soccer ball for practice and competitive play."
+  },
+  {
+    "id": 601,
+    "name": "Facial Cleanser",
+    "category": "Beauty & Personal Care",
+    "price": 19.99,
+    "description": "A gentle facial cleanser for daily use."
+  },
+  {
+    "id": 602,
+    "name": "Moisturizer",
+    "category": "Beauty & Personal Care",
+    "price": 24.99,
+    "description": "A hydrating moisturizer for all skin types."
+  },
+  {
+    "id": 603,
+    "name": "Shampoo",
+    "category": "Beauty & Personal Care",
+    "price": 14.99,
+    "description": "A nourishing shampoo that strengthens hair."
+  },
+  {
+    "id": 604,
+    "name": "Conditioner",
+    "category": "Beauty & Personal Care",
+    "price": 14.99,
+    "description": "A smoothing conditioner for soft and manageable hair."
+  },
+  {
+    "id": 605,
+    "name": "Lip Balm",
+    "category": "Beauty & Personal Care",
+    "price": 5.99,
+    "description": "A moisturizing lip balm for dry and chapped lips."
+  },
+  {
+    "id": 606,
+    "name": "Sunscreen",
+    "category": "Beauty & Personal Care",
+    "price": 19.99,
+    "description": "A broad-spectrum sunscreen with SPF 50."
+  },
+  {
+    "id": 607,
+    "name": "Body Lotion",
+    "category": "Beauty & Personal Care",
+    "price": 15.99,
+    "description": "A rich body lotion that keeps skin hydrated all day."
+  },
+  {
+    "id": 608,
+    "name": "Perfume",
+    "category": "Beauty & Personal Care",
+    "price": 59.99,
+    "description": "A luxurious perfume with a floral fragrance."
+  },
+  {
+    "id": 609,
+    "name": "Deodorant",
+    "category": "Beauty & Personal Care",
+    "price": 9.99,
+    "description": "A long-lasting deodorant with a fresh scent."
+  },
+  {
+    "id": 610,
+    "name": "Makeup Remover",
+    "category": "Beauty & Personal Care",
+    "price": 12.99,
+    "description": "A gentle makeup remover that cleanses without irritation."
+  },
+  {
+    "id": 611,
+    "name": "Foundation",
+    "category": "Beauty & Personal Care",
+    "price": 29.99,
+    "description": "A lightweight foundation that provides full coverage."
+  },
+  {
+    "id": 612,
+    "name": "Mascara",
+    "category": "Beauty & Personal Care",
+    "price": 19.99,
+    "description": "A volumizing mascara for bold and dramatic lashes."
+  },
+  {
+    "id": 613,
+    "name": "Hair Serum",
+    "category": "Beauty & Personal Care",
+    "price": 24.99,
+    "description": "A smoothing hair serum that adds shine and controls frizz."
+  },
+  {
+    "id": 614,
+    "name": "Hand Cream",
+    "category": "Beauty & Personal Care",
+    "price": 7.99,
+    "description": "A moisturizing hand cream for soft and smooth skin."
+  },
+  {
+    "id": 615,
+    "name": "Face Mask",
+    "category": "Beauty & Personal Care",
+    "price": 9.99,
+    "description": "A rejuvenating face mask for a glowing complexion."
+  }
+]

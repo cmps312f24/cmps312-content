@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Electronics",
+    "description": "Devices and gadgets such as smartphones, laptops, and cameras."
+  },
+  {
+    "id": 2,
+    "name": "Clothing",
+    "description": "Apparel including shirts, pants, dresses, and outerwear."
+  },
+  {
+    "id": 3,
+    "name": "Home Appliances",
+    "description": "Household devices such as refrigerators, washing machines, and microwaves."
+  },
+  {
+    "id": 4,
+    "name": "Books",
+    "description": "A wide variety of literature, from fiction to academic texts."
+  },
+  {
+    "id": 5,
+    "name": "Sports Equipment",
+    "description": "Items for various sports including balls, rackets, and fitness gear."
+  },
+  {
+    "id": 6,
+    "name": "Beauty & Personal Care",
+    "description": "Products like skincare, makeup, and personal hygiene items."
+  }
+]

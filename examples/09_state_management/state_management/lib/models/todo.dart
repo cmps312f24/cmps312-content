@@ -1,6 +1,3 @@
-import 'package:flutter/foundation.dart' show immutable;
-
-@immutable
 class Todo {
   const Todo(
       {required this.description, required this.id, this.completed = false});
