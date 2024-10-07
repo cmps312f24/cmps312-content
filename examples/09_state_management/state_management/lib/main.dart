@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:state_management/screens/api_url_screen.dart';
 import 'package:state_management/screens/counter_screen.dart';
 import 'package:state_management/screens/fruits_list.dart';
 import 'package:state_management/screens/home_screen.dart';
@@ -33,6 +34,7 @@ class App extends StatelessWidget {
           '/todo': (context) => const TodoListScreen(),
           '/weather': (context) => const WeatherScreen(),
           '/stock': (context) => const StockPriceScreen(),
+          '/api_url': (context) => const ApiUrlScreen(),
         },
         initialRoute: '/',
       ),

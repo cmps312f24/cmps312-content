@@ -30,7 +30,21 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Riverpod Demo!'),
+            const Text('Riverpod Providers'),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              child: const Text('API URL (Provider Example)'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/api_url');
+              },
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              child: const Text('Counter (NotifierProvider example)'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/counter');
+              },
+            ),
             const SizedBox(height: 16),
             ElevatedButton(
               child: const Text('Weather (FutureProvider example)'),
@@ -40,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 16),
             ElevatedButton(
-              child: const Text('Stock Price (FutureProvider example)'),
+              child: const Text('Stock Price (StreamProvider example)'),
               onPressed: () {
                 Navigator.pushNamed(context, '/stock');
               },
@@ -57,10 +71,6 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.add_circle),
-            label: 'Counter',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.local_grocery_store),
