@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_management/providers/api_url_provider.dart';
 
-final apiUrlProvider = Provider<String>((ref) {
-  return "https://api.example.com";
-});
-
 class ApiUrlScreen extends ConsumerWidget {
   const ApiUrlScreen();
   @override
