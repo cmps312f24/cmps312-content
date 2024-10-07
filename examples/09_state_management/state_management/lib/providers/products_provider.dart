@@ -9,13 +9,12 @@ final productsProvider = FutureProvider<List<Product>>((ref) async {
   return ProductRepository.getProducts();
 });
 
-final filteredProducts = FutureProvider<List<Product>>((ref) async {
+final filteredProducts = Provider<AsyncValue<List<Product>>>((ref) {
   final selectedCategory = ref.watch(selectedCategoryProvider);
   final productsAsync = ref.watch(productsProvider);
 
-  productsAsync.whenData((products) {
-    return selectedCategory != null
-        ? products.where((p) => p.category == selectedCategory).toList()
-        : products;
-  });
+  return productsAsync.whenData((products) =>
+      selectedCategory != null
+          ? products.where((p) => p.category == selectedCategory).toList()
+          : products);
 });

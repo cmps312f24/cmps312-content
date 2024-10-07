@@ -26,8 +26,27 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text('Home'),
       ),
-      body: const Center(
-        child: Text('Riverpod Demo!'),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text('Riverpod Demo!'),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              child: const Text('Weather (FutureProvider example)'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/weather');
+              },
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              child: const Text('Stock Price (FutureProvider example)'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/stock');
+              },
+            ),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,

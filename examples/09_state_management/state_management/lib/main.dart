@@ -4,7 +4,9 @@ import 'package:state_management/screens/counter_screen.dart';
 import 'package:state_management/screens/fruits_list.dart';
 import 'package:state_management/screens/home_screen.dart';
 import 'package:state_management/screens/products_list.dart';
+import 'package:state_management/screens/stock_price_screen.dart';
 import 'package:state_management/screens/todo_list.dart';
+import 'package:state_management/screens/weather_screen.dart';
 
 void main() {
   runApp(const App());
@@ -29,6 +31,8 @@ class App extends StatelessWidget {
           '/products': (context) => const ProductsScreen(),
           '/fruits': (context) => const FruitsScreen(),
           '/todo': (context) => const TodoListScreen(),
+          '/weather': (context) => const WeatherScreen(),
+          '/stock': (context) => const StockPriceScreen(),
         },
         initialRoute: '/',
       ),

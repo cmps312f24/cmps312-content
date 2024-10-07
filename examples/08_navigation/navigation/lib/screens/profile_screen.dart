@@ -10,13 +10,13 @@ class ProfileScreen extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
+          child: const Text('Back to Home'),
           onPressed: () {
             // Return to the previous screen
-            Navigator.pop(context);
+            Navigator.of(context).pop();
             // Or
-            // Navigator.of(context).pop();
+            // Navigator.pop(context);
           },
-          child: const Text('Back to Home'),
         ),
       ),
     );
