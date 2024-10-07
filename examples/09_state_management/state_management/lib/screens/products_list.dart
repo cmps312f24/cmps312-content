@@ -9,16 +9,16 @@ class ProductsScreen extends ConsumerWidget {
   const ProductsScreen();
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final categories = ref.watch(categoriesProvider);
+    final categoriesAsync = ref.watch(categoriesProvider);
     final selectedCategory = ref.watch(selectedCategoryProvider);
-    final products = ref.watch(productsProvider);
+    final productsAsync = ref.watch(filteredProducts);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Product List')),
       body: Column(
         children: [
           // Dropdown for category filter
-          categories.when(
+          categoriesAsync.when(
             data: (categories) {
               return DropdownMenu<String?>(
                 initialSelection: selectedCategory,
@@ -43,18 +43,13 @@ class ProductsScreen extends ConsumerWidget {
 
           // Product list
           Expanded(
-            child: products.when(
+            child: productsAsync.when(
               data: (products) {
-                final filteredProducts = selectedCategory != null
-                    ? products
-                        .where((p) => p.category == selectedCategory)
-                        .toList()
-                    : products;
                 return ListView.builder(
-                  itemCount: filteredProducts.length,
+                  itemCount: products.length,
                   itemBuilder: (context, index) {
                     return ProductTile(
-                      product: filteredProducts[index],
+                      product: products[index],
                       onTap: () {
                         // ToDo: Navigate to product detail screen
                       },

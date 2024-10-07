@@ -15,10 +15,10 @@ class ProductTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(
-        product.name,
+        '${product.name} (\$${product.price})',
         style: const TextStyle(fontWeight: FontWeight.w600),
       ),
-      subtitle: Text(product.category),
+      subtitle: Text(product.description),
       onTap: onTap,
     );
   }
