@@ -21,14 +21,15 @@ class FruitsScreen extends StatelessWidget {
           return FruitListTile(
             fruit: fruit,
             onTap: () {
-              Navigator.of(context).push(
+              Navigator.of(context).pushNamed('fruitDetails', arguments: fruit);
+              /*Navigator.of(context).push(
                 //FruitDetailScreen(fruit: fruit)
                 MaterialPageRoute(
                   builder: (context) {
                     return FruitDetailScreen(fruit: fruit);
                   },
                 ),
-              );
+              );*/
             },
           );
         },
