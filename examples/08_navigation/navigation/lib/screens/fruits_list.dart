@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:navigation/repositories/fruit_repository.dart';
-import 'package:navigation/screens/fruit_detail.dart';
 import 'package:navigation/widgets/fruit_list_tile.dart';
 
 class FruitsScreen extends StatelessWidget {

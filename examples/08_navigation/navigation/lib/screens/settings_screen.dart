@@ -8,16 +8,8 @@ class SettingsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Settings'),
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            // Return to the previous screen
-            Navigator.pop(context);
-            // Or
-            // Navigator.of(context).pop();
-          },
-          child: const Text('Back to Home'),
-        ),
+      body: const Center(
+        child: Text('Back to Home'),
       ),
     );
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:navigation/models/fruit.dart';
-import 'package:navigation/screens/adaptive/landing_page.dart';
 import 'package:navigation/screens/fruit_detail.dart';
 import 'package:navigation/screens/fruits_list.dart';
 import 'package:navigation/screens/home_screen.dart';
@@ -24,7 +23,7 @@ class App extends StatelessWidget {
       // Define named routes
       routes: {
         '/': (context) => const HomeScreen(),
-        'profile': (context) => const LandingPage(), //const ProfileScreen(),
+        'profile': (context) => const ProfileScreen(),
         'fruits': (context) => const FruitsScreen(),
         'settings': (context) => const SettingsScreen(),
         'fruitDetails': (context) {
