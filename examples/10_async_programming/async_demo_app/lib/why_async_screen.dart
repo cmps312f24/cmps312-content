@@ -26,7 +26,6 @@ class _WhyAsyncScreenState extends ConsumerState<WhyAsyncScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Row(
-              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ClickCounter(),
                 Text("Click to check that the UI is still responsive 😃"),
@@ -45,7 +44,6 @@ class _WhyAsyncScreenState extends ConsumerState<WhyAsyncScreen> {
             ),
             const SizedBox(height: 16.0),
             Row(
-              ///mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton(
                   onPressed: () {
@@ -63,7 +61,6 @@ class _WhyAsyncScreenState extends ConsumerState<WhyAsyncScreen> {
             ),
             const SizedBox(height: 16.0),
             Row(
-              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton(
                   onPressed: () async {
@@ -79,7 +76,6 @@ class _WhyAsyncScreenState extends ConsumerState<WhyAsyncScreen> {
             ),
             const SizedBox(height: 16.0),
             Row(
-              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton(
                   onPressed: () async {
