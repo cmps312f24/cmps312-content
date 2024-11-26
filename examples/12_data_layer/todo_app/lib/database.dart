@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:example/task.dart';
-import 'package:example/task_dao.dart';
-import 'package:example/type_converter.dart';
+import 'package:todoapp/task.dart';
+import 'package:todoapp/task_dao.dart';
+import 'package:todoapp/type_converter.dart';
 import 'package:floor/floor.dart';
 import 'package:sqflite/sqflite.dart' as sqflite;
 

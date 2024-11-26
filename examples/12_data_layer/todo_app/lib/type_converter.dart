@@ -1,4 +1,4 @@
-import 'package:example/task.dart';
+import 'package:todoapp/task.dart';
 import 'package:floor/floor.dart';
 
 class DateTimeConverter extends TypeConverter<DateTime, int> {

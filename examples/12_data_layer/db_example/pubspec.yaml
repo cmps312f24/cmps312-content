@@ -8,7 +8,10 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
+  flutter:
+    sdk: flutter
   floor: ^1.5.0
+  sqflite: ^2.4.1 
   # path: ^1.8.0
 
 # dart run build_runner build -d --delete-conflicting-outputs

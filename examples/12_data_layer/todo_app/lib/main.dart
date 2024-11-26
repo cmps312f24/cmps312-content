@@ -1,6 +1,6 @@
-import 'package:example/database.dart';
-import 'package:example/task.dart';
-import 'package:example/task_dao.dart';
+import 'package:todoapp/database.dart';
+import 'package:todoapp/task.dart';
+import 'package:todoapp/task_dao.dart';
 import 'package:flutter/material.dart';
 
 Future<void> main() async {

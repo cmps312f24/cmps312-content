@@ -1,4 +1,4 @@
-name: example
+name: todoapp
 description: >
   The typesafe, reactive and lightweight SQLite abstraction for your Flutter applications.
   This is an example on how to use the library.
@@ -13,11 +13,11 @@ dependencies:
   floor: ^1.5.0
   flutter:
     sdk: flutter
-  sqflite: any # This dependency is needed to solve the problem with warning about transitive dependencies
+  sqflite: any
 
 dev_dependencies:
   analyzer: ^6.4.1
-  build_runner: ^2.4.8
+  build_runner: ^2.4.13
   floor_generator: ^1.5.0
   flutter_lints: ^3.0.1
   flutter_test:

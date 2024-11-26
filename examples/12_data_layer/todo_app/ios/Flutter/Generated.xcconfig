@@ -1,6 +1,6 @@
 // This is a generated file; do not edit or check into version control.
 FLUTTER_ROOT=C:\Users\erradi\flutter
-FLUTTER_APPLICATION_PATH=C:\_Teaching\flutter-resources\db-orm\example
+FLUTTER_APPLICATION_PATH=C:\_cmps312-content\examples\12_data_layer\todo_app
 COCOAPODS_PARALLEL_CODE_SIGN=true
 FLUTTER_TARGET=lib\main.dart
 FLUTTER_BUILD_DIR=build
