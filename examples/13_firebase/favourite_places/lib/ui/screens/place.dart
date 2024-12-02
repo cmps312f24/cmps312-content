@@ -1,10 +1,9 @@
-import 'package:favourite_places/ui/screens/manage.dart';
 import 'package:favourite_places/ui/widgets/main_drawer.dart';
+import 'package:favourite_places/ui/widgets/places_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:favourite_places/providers/user_places.dart';
-import 'package:favourite_places/ui/widgets/place_list.dart';
+import 'package:favourite_places/providers/places_provider.dart';
 
 class PlacesScreen extends ConsumerStatefulWidget {
   const PlacesScreen({super.key});
@@ -16,13 +15,14 @@ class PlacesScreen extends ConsumerStatefulWidget {
 }
 
 class _PlacesScreenState extends ConsumerState<PlacesScreen> {
-  late Future<void> _placesFuture;
+  //late Future<void> _placesFuture;
 
   @override
   void initState() {
     super.initState();
 
-    _placesFuture = ref.read(userPlacesProvider.notifier).getPlaces();
+    //_placesFuture = ref.read(placesProvider.notifier).getPlaces();
+    ref.read(placesProvider.notifier).getPlaces();
   }
 
   void _navigateTo(String goTo) {
@@ -33,14 +33,14 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
       ));
     } else {
       Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => const ManageScreen(),
+        builder: (context) => const PlacesScreen(),
       ));
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    final userPlaces = ref.watch(userPlacesProvider);
+    final userPlaces = ref.watch(placesProvider);
     return Scaffold(
       drawer: MainDrawer(
         onPressedNavigate: _navigateTo,
@@ -55,7 +55,10 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
               .copyWith(color: Theme.of(context).colorScheme.onSurface),
         ),
       ),
-      body: FutureBuilder(
+      body: PlacesList(
+        places: userPlaces,
+      ),
+      /*body: FutureBuilder(
         future: _placesFuture,
         builder: (context, snapshot) =>
             snapshot.connectionState == ConnectionState.waiting
@@ -63,7 +66,7 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
                 : PlaceList(
                     places: userPlaces,
                   ),
-      ),
+      ),*/
     );
   }
 }

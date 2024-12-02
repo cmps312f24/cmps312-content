@@ -4,7 +4,7 @@ import 'package:favourite_places/utils/error_handler.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:favourite_places/providers/user_places.dart';
+import 'package:favourite_places/providers/places_provider.dart';
 import 'package:favourite_places/models/place.dart';
 import 'package:favourite_places/ui/widgets/image_input.dart';
 import 'package:favourite_places/ui/widgets/location_input.dart';
@@ -35,7 +35,7 @@ class _EditPlaceState extends ConsumerState<EditPlace> {
     if (enteredPlace.isEmpty ||
         (_selectedImage == null && _initialImage == null) ||
         _location == null) {
-      ErrorHandler.showMessage(context, 'All fiels are mandatory');
+      MessageHelper.showMessage(context, 'All fiels are mandatory');
       return;
     }
 
@@ -44,7 +44,7 @@ class _EditPlaceState extends ConsumerState<EditPlace> {
     });
 
     if (_selectedImage == null) {
-      await ref.read(userPlacesProvider.notifier).updatePlace(
+      await ref.read(placesProvider.notifier).updatePlace(
             id: widget.place.id,
             title: enteredPlace,
             location: _location!,
@@ -52,7 +52,7 @@ class _EditPlaceState extends ConsumerState<EditPlace> {
             context: context,
           );
     } else {
-      await ref.read(userPlacesProvider.notifier).updatePlace(
+      await ref.read(placesProvider.notifier).updatePlace(
             id: widget.place.id,
             title: enteredPlace,
             location: _location!,
@@ -66,7 +66,7 @@ class _EditPlaceState extends ConsumerState<EditPlace> {
     });
 
     Navigator.of(context).pop();
-    ErrorHandler.showMessage(context, 'Place Updated Successfully.');
+    MessageHelper.showMessage(context, 'Place Updated Successfully.');
   }
 
   @override

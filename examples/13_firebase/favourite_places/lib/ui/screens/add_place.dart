@@ -6,7 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:favourite_places/models/place.dart';
 import 'package:favourite_places/ui/widgets/location_input.dart';
-import 'package:favourite_places/providers/user_places.dart';
+import 'package:favourite_places/providers/places_provider.dart';
 import 'package:favourite_places/ui/widgets/image_input.dart';
 
 class AddPlaceScreen extends ConsumerStatefulWidget {
@@ -28,7 +28,7 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
     final enteredPlace = _placeName.text;
 
     if (enteredPlace.isEmpty || _selectedImage == null || _location == null) {
-      ErrorHandler.showMessage(context, 'All fiels are mandatory');
+      MessageHelper.showMessage(context, 'All fiels are mandatory');
       return;
     }
 
@@ -37,7 +37,7 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
     });
 
     await ref
-        .read(userPlacesProvider.notifier)
+        .read(placesProvider.notifier)
         .addPlace(enteredPlace, _selectedImage!, _location!, context);
 
     setState(() {
@@ -45,7 +45,7 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
     });
 
     Navigator.of(context).pop();
-    ErrorHandler.showMessage(context, 'Place Added Successfully.');
+    MessageHelper.showMessage(context, 'Place Added Successfully.');
   }
 
   @override
@@ -112,7 +112,7 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
                             height: 20,
                             child: CircularProgressIndicator(
                               strokeWidth: 2,
-                              color: Colors.white, 
+                              color: Colors.white,
                             ),
                           )
                         : const Icon(Icons.add),
@@ -120,8 +120,7 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
                         ? const Text('Adding...')
                         : const Text('Add Place'),
                     style: ElevatedButton.styleFrom(
-                      minimumSize: const Size(
-                          150, 40),
+                      minimumSize: const Size(150, 40),
                     ),
                   ),
                 ],

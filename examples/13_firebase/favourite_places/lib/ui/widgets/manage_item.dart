@@ -1,5 +1,5 @@
 import 'package:favourite_places/models/place.dart';
-import 'package:favourite_places/providers/user_places.dart';
+import 'package:favourite_places/providers/places_provider.dart';
 import 'package:favourite_places/ui/screens/edit_place.dart';
 import 'package:favourite_places/utils/error_handler.dart';
 import 'package:flutter/material.dart';
@@ -28,14 +28,14 @@ class _ManageItemState extends ConsumerState<ManageItem> {
     });
 
     await ref
-        .read(userPlacesProvider.notifier)
+        .read(placesProvider.notifier)
         .removePlace(widget.place.id, context);
 
     setState(() {
       _isDeleting = false;
     });
 
-    ErrorHandler.showMessage(context, 'Place Removed Successfully.');
+    MessageHelper.showMessage(context, 'Place Removed Successfully.');
   }
 
   @override

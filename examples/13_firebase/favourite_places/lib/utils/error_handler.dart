@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-class ErrorHandler {
+class MessageHelper {
   static String getErrorMessage(FirebaseException e) {
     switch (e.code) {
       case 'permission-denied':
@@ -9,8 +9,6 @@ class ErrorHandler {
 
       case 'not-found':
         return 'The requested resource could not be found.';
-
-        
 
       case 'deadline-exceeded':
         return 'The request timed out. Please try again later.';

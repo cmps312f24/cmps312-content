@@ -27,7 +27,7 @@ class Place {
   final String image;
   final PlaceLocation location;
 
-  Map<String, dynamic> toMap() {
+  Map<String, dynamic> toJson() {
     return {
       'id': id,
       'placeName': placeName,
@@ -40,7 +40,7 @@ class Place {
     };
   }
 
-  static Place fromMap(Map<String, dynamic> data) {
+  static Place fromJson(Map<String, dynamic> data) {
     final location = PlaceLocation(
         latitude: data['location']['latitude'],
         longitude: data['location']['longitude'],
