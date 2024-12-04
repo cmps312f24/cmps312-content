@@ -1,0 +1,14 @@
+Optional Tasks:
+1. Update login to accept both email and none email
+2. Go to Error 404 page
+3. Add cheque screen on click cheque
+4. Add details button cheque deposits
+5. Limit amount
+
+
+
+TODO:
+2. Invoice params
+3. Update Cheques (6.3)
+4. U7
+5. U8 Fix
